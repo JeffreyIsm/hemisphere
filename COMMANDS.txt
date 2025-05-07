@@ -1,0 +1,6 @@
+Running Locally:
+npm run dev
+
+Github Pages:
+npm run build
+npm run deploy

@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+@theme{
+    --color-hemi: #e4eef2;
+}
+
+@theme {
+    --animate-fade-in-scale: fade-in-scale 3s ease-out;
+    --animate-fade-in-scale-delayed: fade-in-scale-delayed 5s ease-out;
+    
+    @keyframes fade-in-scale {
+      0% {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes fade-in-scale-delayed {
+      0%, 40% {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+}
+
+/*#e4eef2*/
