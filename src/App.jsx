@@ -1,12 +1,15 @@
-import { HashRouter as Router, Routes, Route } from "react-router-dom"
+import { HashRouter as Router, Routes, Route  } from "react-router-dom"
 {/* BrowserRouter instead of HashRouter for real, this is just for github */}
-import SideBar from "./Sidebar"
+
 import Hero from "./Hero"
 import About from "./About"
 import Learn from "./Learn"
 import Shop from "./Shop"
 import Join from "./Join"
+
+import SideBar from "./Sidebar"
 function App() {
+
 
   return (
     <Router>

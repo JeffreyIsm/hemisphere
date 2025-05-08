@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 @import "tailwindcss";
 @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
 
+
 @theme{
   --color-hemi: #e4eef2;
+}
+
+@theme {
+  --font-lora: "DM Serif Display", serif; 
 }
 
 @theme {
