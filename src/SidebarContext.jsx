@@ -1,8 +1,13 @@
 import { createContext, useContext, useState } from 'react';
 
+/*This context will hold information about whether the sidebar is open or closed.*/
 const SidebarContext = createContext();
 
 export function SidebarProvider({ children }) {
+
+    /* This state can track sidebar visibility */
+    /* We're creating a state called 'isopen' with initial value false */
+    /* setIsOpen is a function to update the 'isopen'*/
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleSidebar = () => {

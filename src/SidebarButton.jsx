@@ -5,9 +5,9 @@ function SidebarButton() {
 
     return (
         <button 
-            onClick={toggleSidebar}
+            onMouseEnter={toggleSidebar}
             type="button" 
-            className="fixed top-2 left-2 inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-blue-200 dark:focus:ring-gray-600"
+            className="fixed top-2 left-2 inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg hover:bg-hemi focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-hemi dark:focus:ring-gray-600"
         >
             <span className="sr-only">Open sidebar</span>
             <svg 

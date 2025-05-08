@@ -21,20 +21,29 @@ function SideBar() {
         };
     }, [setIsOpen]);
 
+    const handleMouseLeave = () => {
+        const sidebar = document.getElementById('logo-sidebar');
+        if (sidebar) {
+            sidebar.classList.add('-translate-x-full');
+            setIsOpen(false);
+        }
+    };
+
     return (
         <>
             <div 
                 id="backdrop" 
                 className={`fixed inset-0 bg-gray-900 z-30 transition-all duration-300 ${
-                    isOpen ? 'opacity-50' : 'opacity-0 pointer-events-none'
+                    isOpen ? 'opacity-0' : 'opacity-0 pointer-events-none'
                 }`}
             />
             <aside 
                 id="logo-sidebar" 
                 className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform duration-300 -translate-x-full" 
                 aria-label="Sidebar"
+                onMouseLeave={handleMouseLeave}
             >
-                <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-hemi">
+                <div className="mt-12 h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-hemi">
                     <Link to='/' className="flex items-center ps-2.5 mb-5">
                         <img src="https://flowbite.com/docs/images/logo.svg" className="h-6 me-3 sm:h-7" alt="Flowbite Logo" />
                         <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-black">hemisphere</span>
