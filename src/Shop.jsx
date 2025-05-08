@@ -1,7 +1,7 @@
 import SidebarButton from "./SidebarButton";
 function Shop(){
     return(
-        <div className='bg-hemi flex-col w-screen h-screen place-content-center'>
+        <div className='bg-hemi-pink flex-col w-screen h-screen place-content-center'>
             <SidebarButton/>
             
             <h1 className='font-lora text-5xl flex justify-center animate-fade-in-scale'>hemisphere</h1>

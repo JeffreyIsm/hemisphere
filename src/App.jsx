@@ -19,8 +19,8 @@ function App() {
           <Route path="/" element={<Hero />} />
           <Route path="/about" element={<About />} />
           <Route path="/learn" element={<Learn />} />
-          <Route path="/join" element={<Join />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/join" element={<Join />} />
         </Routes>
       </Router>
     </SidebarProvider>

@@ -43,29 +43,32 @@ function SideBar() {
                 aria-label="Sidebar"
                 onMouseLeave={handleMouseLeave}
             >
-                <div className="mt-15 h-full px-3 py-4 overflow-y-auto bg-hemi dark:bg-hemi">
-                    <Link to='/' className="flex items-center ps-2.5 mb-5">
-                        <img src="images/logotpcs.png" className="h-6 me-3 sm:h-15" alt="Flowbite Logo" />
-                    </Link>
-                    <ul className="space-y-2 font-medium">
+                <div className="ml-4 mt-16 h-full px-3 py-16 overflow-y-auto bg-hemi-pink dark:bg-hemi-pink">
+                    <ul className="space-y-0 text-sm tracking-widest font-inter">
+                        <hr className="border-t-2 mb-4 ml-3.5 w-10"></hr>
                         <li>
-                            <Link to='/about' className="flex items-center p-2 text-gray-900 rounded-lg dark:text-black hover:bg-gray-100 dark:hover:bg-blue-200 group">
-                                <span className="flex-1 ms-3 whitespace-nowrap">ABOUT US</span>
+                            <Link to='/' className="flex items-center p-0.5 text-gray-900 rounded-lg dark:text-black hover:text-white transition-all duration-300 ease-in-out">
+                                <span className="flex-1 ms-3 whitespace-nowrap">HOME</span>
                             </Link>
                         </li>
                         <li>
-                            <Link to='/learn' className="flex items-center p-2 text-gray-900 rounded-lg dark:text-black hover:bg-gray-100 dark:hover:bg-blue-200 group">
+                            <Link to='/about' className="flex items-center p-0.25 text-gray-900 rounded-lg dark:text-black hover:text-white transition-all duration-300 ease-in-out">
+                                <span className="flex-1 ms-3 whitespace-nowrap">ABOUT</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/learn' className="flex items-center p-0.25 text-gray-900 rounded-lg dark:text-black hover:text-white transition-all duration-300 ease-in-out">
                                 <span className="flex-1 ms-3 whitespace-nowrap">LEARN</span>
                             </Link>
                         </li>
                         <li>
-                            <Link to='/join' className="flex items-center p-2 text-gray-900 rounded-lg dark:text-black hover:bg-gray-100 dark:hover:bg-blue-200 group">
-                                <span className="flex-1 ms-3 whitespace-nowrap">JOIN</span>
+                            <Link to='/shop' className="flex items-center p-0.25 text-gray-900 rounded-lg dark:text-black hover:text-white transition-all duration-300 ease-in-out">
+                                <span className="flex-1 ms-3 whitespace-nowrap">SHOP</span>
                             </Link>
                         </li>
                         <li>
-                            <Link to='/shop' className="flex items-center p-2 text-gray-900 rounded-lg dark:text-black hover:bg-gray-100 dark:hover:bg-blue-200 group">
-                                <span className="flex-1 ms-3 whitespace-nowrap">PRODUCTS</span>
+                            <Link to='/join' className="flex items-center p-0.25 text-gray-900 rounded-lg dark:text-black hover:text-white transition-all duration-300 ease-in-out">
+                                <span className="flex-1 ms-3 whitespace-nowrap">JOIN US</span>
                             </Link>
                         </li>
                     </ul>
